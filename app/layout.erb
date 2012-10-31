@@ -1,0 +1,23 @@
+<head> 
+    <title>JqMobileStore</title> 
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <!-- Modify some of the defaults for jquery -->
+    <script type="text/javascript">
+
+    <!-- Code taken from the jquery website for setting defaults, where we extend .mobile. -->
+    $(document).bind("mobileinit", function(){
+      $.extend(  $.mobile , {
+        <!-- change the loading message to false -->
+        loadingMessage: false
+      });
+    });
+    <!-- finally, we need the jquery.mobile JavaScript. -->
+    </script>   <script type="text/javascript" src="/public/jquery.mobile-1.0a3.min.js"></script>
+
+</head> 
+<body>
+    <%= @content %>
+</body>
